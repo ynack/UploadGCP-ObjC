@@ -13,6 +13,8 @@
 		3373BD20223A2B3800747F3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3373BD1F223A2B3800747F3C /* main.m */; };
 		3373BD2B223A2B3800747F3C /* UploadGCPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3373BD2A223A2B3800747F3C /* UploadGCPTests.m */; };
 		3373BD36223A2B3800747F3C /* UploadGCPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3373BD35223A2B3800747F3C /* UploadGCPUITests.m */; };
+		3373BD45223A2DDD00747F3C /* DragDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3373BD44223A2DDD00747F3C /* DragDrop.m */; };
+		3373BD4B223A37D600747F3C /* GCP.pref in Resources */ = {isa = PBXBuildFile; fileRef = 3373BD4A223A37D600747F3C /* GCP.pref */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		3373BD31223A2B3800747F3C /* UploadGCPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UploadGCPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3373BD35223A2B3800747F3C /* UploadGCPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadGCPUITests.m; sourceTree = "<group>"; };
 		3373BD37223A2B3800747F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3373BD43223A2DDD00747F3C /* DragDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragDrop.h; sourceTree = "<group>"; };
+		3373BD44223A2DDD00747F3C /* DragDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragDrop.m; sourceTree = "<group>"; };
+		3373BD4A223A37D600747F3C /* GCP.pref */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GCP.pref; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +109,9 @@
 				3373BD1E223A2B3800747F3C /* Info.plist */,
 				3373BD1F223A2B3800747F3C /* main.m */,
 				3373BD21223A2B3800747F3C /* UploadGCP.entitlements */,
+				3373BD43223A2DDD00747F3C /* DragDrop.h */,
+				3373BD44223A2DDD00747F3C /* DragDrop.m */,
+				3373BD4A223A37D600747F3C /* GCP.pref */,
 			);
 			path = UploadGCP;
 			sourceTree = "<group>";
@@ -193,6 +201,11 @@
 				TargetAttributes = {
 					3373BD12223A2B3700747F3C = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					3373BD25223A2B3800747F3C = {
 						CreatedOnToolsVersion = 10.1;
@@ -231,6 +244,7 @@
 			files = (
 				3373BD1A223A2B3800747F3C /* Assets.xcassets in Resources */,
 				3373BD1D223A2B3800747F3C /* MainMenu.xib in Resources */,
+				3373BD4B223A37D600747F3C /* GCP.pref in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3373BD20223A2B3800747F3C /* main.m in Sources */,
+				3373BD45223A2DDD00747F3C /* DragDrop.m in Sources */,
 				3373BD18223A2B3700747F3C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
