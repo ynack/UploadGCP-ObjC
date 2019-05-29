@@ -14,7 +14,6 @@
 		3373BD2B223A2B3800747F3C /* UploadGCPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3373BD2A223A2B3800747F3C /* UploadGCPTests.m */; };
 		3373BD36223A2B3800747F3C /* UploadGCPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3373BD35223A2B3800747F3C /* UploadGCPUITests.m */; };
 		3373BD45223A2DDD00747F3C /* DragDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3373BD44223A2DDD00747F3C /* DragDrop.m */; };
-		3373BD4B223A37D600747F3C /* GCP.pref in Resources */ = {isa = PBXBuildFile; fileRef = 3373BD4A223A37D600747F3C /* GCP.pref */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +50,6 @@
 		3373BD37223A2B3800747F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3373BD43223A2DDD00747F3C /* DragDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragDrop.h; sourceTree = "<group>"; };
 		3373BD44223A2DDD00747F3C /* DragDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragDrop.m; sourceTree = "<group>"; };
-		3373BD4A223A37D600747F3C /* GCP.pref */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GCP.pref; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +109,6 @@
 				3373BD21223A2B3800747F3C /* UploadGCP.entitlements */,
 				3373BD43223A2DDD00747F3C /* DragDrop.h */,
 				3373BD44223A2DDD00747F3C /* DragDrop.m */,
-				3373BD4A223A37D600747F3C /* GCP.pref */,
 			);
 			path = UploadGCP;
 			sourceTree = "<group>";
@@ -244,7 +241,6 @@
 			files = (
 				3373BD1A223A2B3800747F3C /* Assets.xcassets in Resources */,
 				3373BD1D223A2B3800747F3C /* MainMenu.xib in Resources */,
-				3373BD4B223A37D600747F3C /* GCP.pref in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
