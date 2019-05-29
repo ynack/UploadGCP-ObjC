@@ -15,7 +15,6 @@
 		3373BD36223A2B3800747F3C /* UploadGCPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3373BD35223A2B3800747F3C /* UploadGCPUITests.m */; };
 		3373BD45223A2DDD00747F3C /* DragDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3373BD44223A2DDD00747F3C /* DragDrop.m */; };
 		33D48311229E27BC00A987EC /* STPrivilegedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D4830F229E27BC00A987EC /* STPrivilegedTask.m */; };
-		33D48315229E5BB800A987EC /* cmnd.txt in Resources */ = {isa = PBXBuildFile; fileRef = 33D48314229E5BB800A987EC /* cmnd.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 		3373BD44223A2DDD00747F3C /* DragDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragDrop.m; sourceTree = "<group>"; };
 		33D4830F229E27BC00A987EC /* STPrivilegedTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STPrivilegedTask.m; path = "../../../../../../../Desktop/STPrivilegedTask-master/STPrivilegedTask.m"; sourceTree = "<group>"; };
 		33D48310229E27BC00A987EC /* STPrivilegedTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STPrivilegedTask.h; path = "../../../../../../../Desktop/STPrivilegedTask-master/STPrivilegedTask.h"; sourceTree = "<group>"; };
-		33D48314229E5BB800A987EC /* cmnd.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = cmnd.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +149,6 @@
 		33D48313229E5B9600A987EC /* resouce */ = {
 			isa = PBXGroup;
 			children = (
-				33D48314229E5BB800A987EC /* cmnd.txt */,
 			);
 			path = resouce;
 			sourceTree = "<group>";
@@ -265,7 +262,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3373BD1A223A2B3800747F3C /* Assets.xcassets in Resources */,
-				33D48315229E5BB800A987EC /* cmnd.txt in Resources */,
 				3373BD1D223A2B3800747F3C /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
