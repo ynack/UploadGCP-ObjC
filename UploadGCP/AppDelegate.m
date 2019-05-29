@@ -196,7 +196,7 @@
     
     STPrivilegedTask *privilegedTask = [[STPrivilegedTask alloc] init];
     
-    NSString *ins_usr = [NSString stringWithFormat:@"%@@%@:",user,instance];
+    NSString *ins_dist = [NSString stringWithFormat:@"%@@%@:%@",user,instance,dist];
     NSString *port_num = [NSString stringWithFormat:@"--port=%@",port];
     
     //NSLog(@"%@",ins_usr);
@@ -204,14 +204,8 @@
     //NSMutableArray *components = [[[self.GcpCmnd stringValue] componentsSeparatedByString:@" "] mutableCopy];
     //NSString *launchPath = components[0];
     //[components removeObjectAtIndex:0];
-    NSArray *components = [NSArray arrayWithObjects:@"compute",@"scp",source,ins_usr,dist,port_num, nil];
-    
-    NSLog(@"%@",components[0]);
-    NSLog(@"%@",components[1]);
-    NSLog(@"%@",components[2]);
-    NSLog(@"%@",components[3]);
-    NSLog(@"%@",components[4]);
-    NSLog(@"%@",components[5]);
+    NSArray *components = [NSArray arrayWithObjects:@"compute",@"scp",source,ins_dist,port_num, nil];
+
 
     [privilegedTask setLaunchPath:cmd];
     [privilegedTask setArguments:components];
@@ -233,11 +227,11 @@
     [privilegedTask waitUntilExit];
     
     // Success!  Now, start monitoring output file handle for data
-   /* NSFileHandle *readHandle = [privilegedTask outputFileHandle];
+    NSFileHandle *readHandle = [privilegedTask outputFileHandle];
     NSData *outputData = [readHandle readDataToEndOfFile];
     NSString *outputString = [[NSString alloc] initWithData:outputData encoding:NSUTF8StringEncoding];
-    [self.outputTextField setString:outputString];
-    
+    [self.output setString:outputString];
+    /*
     NSString *exitStr = [NSString stringWithFormat:@"Exit status: %d", privilegedTask.terminationStatus];
     [self.exitStatusTextField setStringValue:exitStr];*/
 }

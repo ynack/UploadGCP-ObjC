@@ -38,6 +38,7 @@
 
 @property (weak) IBOutlet NSTextField *FldrText;
 @property (weak) IBOutlet NSTextField *RsText;
+@property (unsafe_unretained) IBOutlet NSTextView *output;
 
 @property (weak) IBOutlet NSButton *SndBtn;
 

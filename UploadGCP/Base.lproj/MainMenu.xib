@@ -22,7 +22,6 @@
                 <outlet property="InsText" destination="Dg8-rQ-93W" id="KYa-G7-CZC"/>
                 <outlet property="PrtLockBtn" destination="imb-ik-PeY" id="7E1-O7-7xJ"/>
                 <outlet property="PrtText" destination="TUj-As-dCS" id="kSN-zo-qF9"/>
-                <outlet property="RsText" destination="ggO-XN-wLV" id="0WR-bZ-XzN"/>
                 <outlet property="SlctCSSBtn" destination="abI-qr-rt4" id="ljD-91-ZKA"/>
                 <outlet property="SlctFldrBtn" destination="5q2-QR-X4U" id="vFf-Hs-jkb"/>
                 <outlet property="SlctIMGBtn" destination="4aH-wm-oCi" id="ADE-Yn-CpW"/>
@@ -31,6 +30,7 @@
                 <outlet property="SrcText" destination="5P7-Zk-NMc" id="hEP-Gn-9eF"/>
                 <outlet property="UsrLockBtn" destination="PsG-1P-LKC" id="y5E-7k-dR4"/>
                 <outlet property="UsrText" destination="W4n-zU-NOa" id="yne-eg-fRl"/>
+                <outlet property="output" destination="3SV-i8-ybm" id="5Ta-uu-nJJ"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -714,15 +714,6 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ggO-XN-wLV" customClass="DragDrop">
-                        <rect key="frame" x="20" y="30" width="291" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="De6-cx-c1d">
-                            <font key="font" usesAppearanceFont="YES"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u9B-xL-J1N" customClass="DragDrop">
                         <rect key="frame" x="102" y="368" width="358" height="31"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -940,6 +931,33 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Alk-Ju-bbB">
+                        <rect key="frame" x="20" y="30" width="320" height="75"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="A1L-O8-h9a">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textView ambiguous="YES" importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="3SV-i8-ybm">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="minSize" width="320" height="75"/>
+                                    <size key="maxSize" width="320" height="10000000"/>
+                                    <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                </textView>
+                            </subviews>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="gBa-3W-9OV">
+                            <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="RyC-uQ-ZDf">
+                            <rect key="frame" x="304" y="0.0" width="16" height="75"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
                 </subviews>
             </view>
             <point key="canvasLocation" x="94" y="-203"/>
