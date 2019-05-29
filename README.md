@@ -1,2 +1,2 @@
 # UploadGCP-ObjC
-GCPのWebサーバにソースファイルをアップロードするアプリ
+GCPのWebサーバにソースファイルをアップロードするアプリ(Objectie-Cバージョン)
