@@ -21,6 +21,7 @@
 @property (weak) IBOutlet NSTextField *SrcText;
 @property (weak) IBOutlet NSTextField *DstText;
 
+@property (weak) IBOutlet NSTextField *GcpCmnd;
 @property (weak) IBOutlet NSTextField *UsrText;
 @property (weak) IBOutlet NSTextField *InsText;
 @property (weak) IBOutlet NSTextField *PrtText;
